@@ -1,16 +1,15 @@
-branches:
-  except:
-    - /^v\d/
 language: scala
 scala:
-  - 2.10.4
-  - 2.11.4
-script:
-  - 'sbt -Dsbt.log.noformat=true ++$TRAVIS_SCALA_VERSION test'
-  - 'if [ "${TRAVIS_PULL_REQUEST}" = "false" ] && [ "${TRAVIS_BRANCH}" = "master" ]; then sbt ++$TRAVIS_SCALA_VERSION make-site publish; fi'
+  - 2.10.6
+  - 2.11.8
 jdk:
   - oraclejdk7
-env:
-  global:
-  - secure: LZqtbvSqVPpycaMLC9FnCaEs70WLt9tr+477t6jdCwyUgkaRfcBvLVeh/EsH4RJW+GtvNqmpZ43dpUGrnxZktFvZz+1LdPNtVggLza+ysMd/KlVlSXT1Re1NvArc4nE9Po+hQws26ehvlk2+BKh0e5SfXRU/3+NDs1H0bgtkQVU=
-  - secure: aqp+oGdQuHoKktOM9r6AEvNqSWCXnmCF6hAZMgVY1A5PFM9sW+gKqe91WfjCOikv/RSv1Vq/rD4KXxGeW/+M4RntGjhBXKuyQ3nqBZQL5LcpPp9xY15JUW1FteBHam4DuAOxyuudJSONmbb8KdC33siBHHcJe5/diqAUazXFMg0=
+  - oraclejdk8
+cache:
+  directories:
+    - $HOME/.ivy2/cache
+    - $HOME/.sbt/boot
+    - $HOME/.isabelle
+before_cache:
+  - find $HOME/.ivy2 -name "ivydata-*.properties" -delete
+  - find $HOME/.sbt -name "*.lock" -delete
