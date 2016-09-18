@@ -1,5 +1,9 @@
 # Log4s #
 
+_Note:_ This is a fork of [log4s](https://github.com/Log4s/log4s) for the sole
+purpose of making it ready for Scala 2.12.x. Credit goes to the original
+authors (see bottom of this file).
+
 ## Introduction ##
 
 This is a simple project to wrap the excellent [SLF4J](http://slf4j.org/)
@@ -22,16 +26,9 @@ project's goals.
 
 To use Log4s, add the following to your SBT build:
 
-    libraryDependencies += "org.log4s" %% "log4s" % "1.3.0"
+    libraryDependencies += "info.hupel.fork.org.log4s" %% "log4s" % "2.0"
 
-Scala 2.10 and 2.11 are both fully supported, and enabling macro paradise in
-the compiler is not required. You can just add it like any other dependency.
-Scala 2.12 milestone builds are generally supported within a few days of when
-they are public.
-
-Scala 2.10 support will be maintained at least until six months after Scala
-2.12 is final, but support will be maintained beyond that until there are
-clear technical challenges with continuing that support.
+Scala 2.10.x, 2.11.x and 2.12.x are fully supported.
 
 ## Examples ##
 
