@@ -2,7 +2,7 @@ organization := "info.hupel.fork.org.log4s"
 
 scalaVersion := "2.11.8"
 
-crossScalaVersions := Seq("2.10.6", "2.11.8", "2.12.0-RC1")
+crossScalaVersions := Seq("2.10.6", "2.11.8", "2.12.0")
 
 name := "log4s"
 
