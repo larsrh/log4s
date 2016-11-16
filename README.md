@@ -1,8 +1,14 @@
 # Log4s #
 
-_Note:_ This is a fork of [log4s](https://github.com/Log4s/log4s) for the sole
+ [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
+_Updated note:_ Upstream has published new releases for Scala 2.12.x. Please
+go to the [original repository](https://github.com/Log4s/log4s) for details.
+This repository is now unmaintained.
+
+~~_Note:_ This is a fork of [log4s](https://github.com/Log4s/log4s) for the sole
 purpose of making it ready for Scala 2.12.x. Credit goes to the original
-authors (see bottom of this file).
+authors (see bottom of this file).~~
 
 ## Introduction ##
 
